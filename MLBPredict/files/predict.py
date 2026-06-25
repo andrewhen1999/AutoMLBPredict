@@ -27,8 +27,6 @@ import sys
 import joblib
 import pandas as pd
 
-import subprocess
-
 sys.path.insert(0, os.path.dirname(__file__))
 from features import load_raw_gamelogs, build_game_features  # noqa: E402
 from models import (  # noqa: E402
