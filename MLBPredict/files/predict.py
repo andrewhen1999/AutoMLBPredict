@@ -141,10 +141,6 @@ def predict_upcoming(upcoming_df: pd.DataFrame, latest_features: pd.DataFrame,
 
         if has_real_line:
             real_line = float(real_line)
-            edge = predicted_total - real_line
-            row["sportsbook_total_line"] = real_line
-            row["predicted_side"] = "OVER" if edge > 0 else "UNDER"
-            row["edge_vs_line"] = round(edge, 2)
         else:
             row["sportsbook_total_line"] = None
             row["predicted_side"] = "N/A (no line given)"
