@@ -139,12 +139,12 @@ def predict_upcoming(upcoming_df: pd.DataFrame, latest_features: pd.DataFrame,
             "model_expected_total": round(float(predicted_total), 2),
         }
 
-        if has_real_line:
-            real_line = float(real_line)
-        else:
-            row["sportsbook_total_line"] = None
-            row["predicted_side"] = "N/A (no line given)"
-            row["edge_vs_line"] = None
+        # if has_real_line:
+        #     real_line = float(real_line)
+        # else:
+        #     row["sportsbook_total_line"] = None
+        #     row["predicted_side"] = "N/A (no line given)"
+        #     row["edge_vs_line"] = None
 
         results.append(row)
 
