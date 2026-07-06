@@ -33,6 +33,17 @@ jobs:
         run: |
           python MLBPredict/data/today_game.py
 
+      - name: Commit Updated today game CSV
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+
+          git add MLBPredict/output/predictions.csv
+
+          git diff --staged --quiet || git commit -m "Update today game"
+
+          git push
+
       - name: Run Prediction Script
         run: |
           python MLBPredict/files/predict.py
