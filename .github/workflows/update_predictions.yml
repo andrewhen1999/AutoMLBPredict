@@ -29,7 +29,7 @@ jobs:
         run: |
           pip install -r MLBPredict/files/requirements.txt
 
-      - name: Run Prediction Script
+      - name: Run Today's Games Script
         run: |
           python MLBPredict/data/today_game.py
 
