@@ -31,6 +31,10 @@ jobs:
 
       - name: Run Prediction Script
         run: |
+          python MLBPredict/data/today_game.py
+
+      - name: Run Prediction Script
+        run: |
           python MLBPredict/files/predict.py
 
       - name: Commit Updated CSV
