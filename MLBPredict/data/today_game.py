@@ -59,7 +59,7 @@ for game_date in data["dates"]:
 
 with open("upcoming_games.csv", "w", newline="") as f:
     writer = csv.writer(f)
-    writer.writerow(["Date", "home_team", "away_team"])
+    writer.writerow(["Date", "home_team", "visitor_team"])
     writer.writerows(rows)
 
 print("CSV created successfully!")
