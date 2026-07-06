@@ -38,7 +38,7 @@ jobs:
           git config user.name "github-actions"
           git config user.email "actions@github.com"
 
-          git add MLBPredict/output/predictions.csv
+          git add MLBPredict/data/upcoming_games.csv
 
           git diff --staged --quiet || git commit -m "Update today game"
 
