@@ -64,5 +64,6 @@ with open("upcoming_games.csv", "w", newline="") as f:
     writer = csv.writer(f)
     writer.writerow(["date", "home_team", "visitor_team"])
     writer.writerows(rows)
+    print(rows)
 
 print("CSV created successfully!")
