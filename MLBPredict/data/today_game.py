@@ -56,6 +56,9 @@ for game_date in data["dates"]:
         away = TEAM_MAP[game["teams"]["away"]["team"]["name"]]
 
         rows.append([game_date_str, home, away])
+        
+    print("Date: " + game_date_str)
+    print(home + away)
 
 with open("upcoming_games.csv", "w", newline="") as f:
     writer = csv.writer(f)
