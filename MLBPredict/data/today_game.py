@@ -58,7 +58,7 @@ for game_date in data["dates"]:
         rows.append([game_date_str, home, away])
         
 
-with open("upcoming_games.csv", "w", newline="") as f:
+with open("MLBPredict/data/upcoming_games.csv", "w", newline="") as f:
     writer = csv.writer(f)
     writer.writerow(["date", "home_team", "visitor_team"])
     writer.writerows(rows)
