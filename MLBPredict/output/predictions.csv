@@ -1,1 +1,2 @@
-
+date,home_team,away_team,home_win_prob,predicted_winner,model_expected_total
+2026-07-16,PHI,NYN,0.633,PHI,9.16
