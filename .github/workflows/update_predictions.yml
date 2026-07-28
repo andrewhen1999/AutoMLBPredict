@@ -41,12 +41,12 @@ jobs:
           git diff --staged --quiet || git commit -m "Update today game"
           git push
 
-       - name: Save previous day predictions
-         run: |
+      - name: Save previous day predictions
+        run: |
           python MLBPredict/files/predictions_history.py
           
-       - name: Commit Updated predictions History CSV
-          run: |
+      - name: Commit Updated predictions History CSV
+        run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           git add MLBPredict/output/predictions_history.csv
