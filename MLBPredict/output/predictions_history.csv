@@ -755,3 +755,6 @@ date,home_team,away_team,home_win_prob,predicted_winner,model_expected_total
 2026-09-20,SDN,MIA,0.59,SDN,8.68
 2026-09-20,ARI,NYA,0.478,NYA,8.79
 2026-09-20,BAL,MIL,0.445,MIL,8.64
+2026-09-21,BAL,TOR,0.459,TOR,8.64
+2026-09-21,DET,WAS,0.604,DET,9.1
+2026-09-21,SFN,MIN,0.574,SFN,9.23
